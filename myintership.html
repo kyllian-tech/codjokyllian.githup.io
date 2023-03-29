@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Mon Alternance</title>
+    <link rel="stylesheet" href="myintership.css">
+</head>
+<body>
+<div class="user hide-details" id="userBox">
+    <img src="photoProfil1.png" onclick="openinfo()">
+    <div class="info">
+        <h1>Pourquoi me prendre ?</h1>
+        <p>Je ne vous apprends rien en vous disant que prendre un alternant en entreprise offre bons nombres d'avantages tels que:</p>
+        <p>Au niveau humain:</p>
+        <p>Prendre un alternant, c'est aussi avoir un élément dynamique qui apporte un œil nouveau sur un métier et sur l'entreprise</p>
+        <p>Au niveau de la culture de l'entreprise:</p>
+        <p>Me recruter comme alternant présente de nombreux avantages comme celle de former un futur collaborateur en CDI ayant une adhésion à votre culture.</p>
+        <p>Pas encore convaincu ? Un instant lisez la suite.</p>
+        <p>Pourquoi moi et pas quelqu'un d'autre ?</p>
+        <p>Parce que, je suis…</p>
+        <p>Curieux et j'ai toujours cette envie d'apprendre de nouvelles choses.</p>
+        <p>Passionné par l'informatique j'en fais depuis l'âge de 14 ans.</p>
+        <p>Un vrai bosseur quelque soit la tâche proposée je l'accomplirais avec enthousiasme.</p>
+        <p>J'ai de bonnes fondations en informatique</p>
+        <p>Un jeune bachelier avec une spécialité Maths et NSI</p>
+        <p>Respectueux toujours le bon état d'esprit quel qu'en soit la situation</p>
+        <p>Sympathique j'ai un bon relationnel avec la plupart des personnes qui m'entoure</p>
+    </div>
+    <div class="close-icon" onclick="closeinfo()"></div>
+
+</div>
+<script>
+    let userBox = document.getElementById("userBox");
+
+function openinfo(){
+    userBox.classList.remove("hide-details");
+}
+function closeinfo(){
+    userBox.classList.add("hide-details");
+}
+</script>
+
+
+</body>
+</html>
